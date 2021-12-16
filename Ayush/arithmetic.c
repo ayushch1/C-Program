@@ -1,30 +1,31 @@
 #include<stdio.h>
 
 int main(){
-    int a,b;
+    float a,b;
     char op;
     printf("Enter the first number");
-    scanf("%d",&a);
+    scanf("%f",&a);
     printf("Enter the second number");
-    scanf("%d",&b);
+    scanf("%f",&b);
+    fflush(stdin);
     printf("Enter the operator");
-    scanf("%c",&op);
+    scanf("\n%c",&op);
     switch(op)
     {
         case '+':
-        printf("%d\n",a+b);
+        printf("%f\n",a+b);
         break;
         case '-':
-        printf("%d\n",a-b);
+        printf("%f\n",a-b);
         break;
         case '*':
-        printf("%d\n",a*b);
+        printf("%f\n",a*b);
         break;
         case '/':
-        printf("%d\n",a/b);
+        printf("%f\n",a/b);
         break;
         default:
-        printf("%d\n invalid input");
+        printf("\n invalid input");
     }
     getch();
 }
